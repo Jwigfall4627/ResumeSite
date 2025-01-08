@@ -167,79 +167,73 @@ body {
     margin-top: 5px;
   }
 
-  /* Base Navbar Styles */
+ /* General Styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
 .navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
     background-color: #333;
-    color: white;
     padding: 10px 20px;
+    color: white;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
 }
 
 .menu {
     list-style: none;
-    display: flex;
     margin: 0;
     padding: 0;
+    display: flex;
+    gap: 15px;
 }
 
-.menu li {
-    margin: 0 10px;
-}
-
-.menu a {
-    color: white;
+.menu li a {
     text-decoration: none;
+    color: white;
     padding: 10px 15px;
     transition: background-color 0.3s;
 }
 
-.menu a:hover {
+.menu li a:hover {
     background-color: #555;
 }
 
 /* Mobile Menu Styles */
-.menu-container {
-    position: relative;
-}
-
-.menu {
-    display: none; /* Hidden by default */
-    flex-direction: column;
-    position: absolute;
-    top: 100%;
-    right: 0;
-    background-color: #333;
-    width: 200px;
-    border: 1px solid #444;
-}
-
-.menu li {
-    margin: 0;
-}
-
-.menu.active {
-    display: flex; /* Show menu when active */
-}
-
 .menu-toggle {
     font-size: 24px;
     cursor: pointer;
-    display: block;
+    display: none;
 }
 
-/* Larger screens */
-@media (min-width: 768px) {
+.menu {
+    display: flex;
+}
+
+@media (max-width: 768px) {
     .menu {
-        display: flex; /* Always show on larger screens */
-        position: static;
-        flex-direction: row;
-        background: none;
-        border: none;
+        display: none;
+        flex-direction: column;
+        background-color: #333;
+        position: absolute;
+        top: 60px;
+        right: 20px;
+        width: 200px;
+        border-radius: 5px;
+    }
+
+    .menu.show {
+        display: flex;
     }
 
     .menu-toggle {
-        display: none; /* Hide toggle on larger screens */
+        display: block;
     }
 }
