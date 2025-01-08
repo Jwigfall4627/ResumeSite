@@ -166,3 +166,80 @@ body {
     border-radius: 15px;
     margin-top: 5px;
   }
+
+  /* Base Navbar Styles */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+}
+
+.menu {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.menu li {
+    margin: 0 10px;
+}
+
+.menu a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    transition: background-color 0.3s;
+}
+
+.menu a:hover {
+    background-color: #555;
+}
+
+/* Mobile Menu Styles */
+.menu-container {
+    position: relative;
+}
+
+.menu {
+    display: none; /* Hidden by default */
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background-color: #333;
+    width: 200px;
+    border: 1px solid #444;
+}
+
+.menu li {
+    margin: 0;
+}
+
+.menu.active {
+    display: flex; /* Show menu when active */
+}
+
+.menu-toggle {
+    font-size: 24px;
+    cursor: pointer;
+    display: block;
+}
+
+/* Larger screens */
+@media (min-width: 768px) {
+    .menu {
+        display: flex; /* Always show on larger screens */
+        position: static;
+        flex-direction: row;
+        background: none;
+        border: none;
+    }
+
+    .menu-toggle {
+        display: none; /* Hide toggle on larger screens */
+    }
+}
