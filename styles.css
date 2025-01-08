@@ -118,3 +118,51 @@ body {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     font-size: 18px;
 }
+
+.background-section {
+    background-image: url('JohnathenWigfall.png'); 
+    background-size: cover;
+    background-position:center;
+    height: 30vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  }
+  
+  .card {
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    max-width: 300px;
+    text-align: center;
+  }
+  
+  .card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+  }
+
+
+  #ResumeButton{
+    height: 25px;
+    border-radius: 15px;
+  }
+
+  #WordpressButton{
+    padding:5px;
+    border-radius: 15px;
+  }
+
+  #GithubButton{
+    padding:5px;
+    border-radius: 15px;
+  }
+
+  #SideProjectButton{
+    padding:5px;
+    border-radius: 15px;
+    margin-top: 5px;
+  }
