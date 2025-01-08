@@ -203,7 +203,8 @@ body {
 }
 
 .menu li a:hover {
-    background-color: #555;
+    background-color:none;
+    border-style: none;
 }
 
 /* Mobile Menu Styles */
