@@ -238,4 +238,10 @@ body {
     .menu-toggle {
         display: block;
     }
+
+    #ResumeButton{
+        height: 25px;
+        border-radius: 15px;
+        margin-bottom: 10px;
+      }
 }
