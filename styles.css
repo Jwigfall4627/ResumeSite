@@ -222,7 +222,7 @@ body {
     .menu {
         display: none;
         flex-direction: column;
-        background-color: #333;
+        background-color: none;
         position: absolute;
         top: 60px;
         right: 20px;
