@@ -47,7 +47,7 @@ body {
     .navbar ul {
         flex-direction: column;
         display: none;
-        background-color: #333;
+        background-color: #ffffff;
         position: absolute;
         top: 50px;
         right: 20px;
