@@ -2,6 +2,7 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+    scroll-behavior: smooth;
 }
 
 .navbar {
@@ -10,6 +11,7 @@ body {
     align-items: center;
     background-color: #333;
     padding: 10px 20px;
+    scroll-behavior: smooth;
 }
 
 .navbar .logo {
@@ -330,4 +332,20 @@ a{
 }
 .contact-section button:hover {
     background-color: #000000;
+}
+
+#H2Web{
+    text-align: center;
+}
+
+#linkimpairmentarcade{
+    color:white;
+}
+
+#stanton{
+color: white;
+}
+
+#icube{
+color:white;
 }
