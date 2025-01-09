@@ -14,8 +14,7 @@
         <ul class="menu">
             <li><a href="#home">Home</a></li>
             <li><a href="#about">About</a></li>
-            <li><a href="#services">Services</a></li>
-            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#Experience">Experience</a></li>
             <li><a href="#contact">Contact</a></li>
         </ul>
     </nav>
@@ -41,6 +40,23 @@
         </div>
       </div> 
 
+    <section>
+        <h2>Web Development Experience</h2>
+        <div class="gallery">
+            <div class="card01">
+                <img src="ImpairmentArcade.jpeg" id="Impairmentarcade" alt="Project 1">
+                <div class="card-text">Project 1: Responsive Website Design</div>
+            </div>
+            <div class="card01">
+                <img src="Stanton-logo.png" alt="Project 2">
+                <div class="card-text">Project 2: E-commerce Platform</div>
+            </div>
+            <div class="card01">
+                <img src="iCube Screenshot.png" alt="Project 3">
+                <div class="card-text">Project 3: Portfolio Website</div>
+            </div>
+        </div>
+    </section>
 
     <section class="skills">
         <h2>My Skills</h2>
@@ -50,9 +66,26 @@
             <li>Python Programming</li>
             <li>Web Hosting</li>
             <li>Version Control (Git, GitHub)</li>
-            <li>Microsoft Excel</li>
         </ul>
     </section>
 
+    <div class="contact-section">
+        <h2>Contact Me</h2>
+        <form action="/submit_form" method="POST">
+            <label for="first-name">First Name:</label>
+            <input type="text" id="first-name" name="first_name" required>
+    
+            <label for="last-name">Last Name:</label>
+            <input type="text" id="last-name" name="last_name" required>
+    
+            <label for="subject">Subject:</label>
+            <input type="text" id="subject" name="subject" required>
+    
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="6" required></textarea>
+    
+            <button type="submit">Submit</button>
+        </form>
+    </div>
 </body>
 </html>
